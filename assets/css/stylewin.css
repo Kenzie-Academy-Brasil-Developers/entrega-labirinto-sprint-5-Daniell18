@@ -1,0 +1,46 @@
+footer{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-top: 15px;
+    background-color: lightblue;
+    border: 2px solid purple;
+   color: purple;
+   width: 100px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.goku{
+    width: 200px;
+    height: 200px;
+   
+}
+.goku{
+    width: 300px;
+    height: 300px;
+}
+.containervitoria{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: black;
+    height: 100vh;
+}
+.containervitoria p{
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'sans-serif';
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+.containervitoria p{
+ 
+    font-size: 30px;
+  
+}
+}

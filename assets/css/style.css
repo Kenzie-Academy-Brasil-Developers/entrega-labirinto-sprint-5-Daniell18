@@ -1,0 +1,97 @@
+#game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+#game div{
+    display: flex;
+
+    flex-direction: row;
+}
+main{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/c0/d1/5e/c0d15ea2e36dcbaf3da3aabe2aaf8bfa.png);
+    background-size: cover;
+}
+.nulo{
+    width: 290px;
+    height: 30px;
+}
+.espaco,.parede{
+    width :15px;
+    height :30px;
+}
+.parede{
+    background-color: black;
+    background-size: contain;
+}
+
+.player{
+    background-color: transparent;
+    background-image: url(../img/gokumobile.png);
+    background-position: 1px 10px;
+    animation-name: goku;
+    animation-duration: 100ms;
+ 
+}
+@keyframes goku{
+from{
+    background-position:  -10px 10px;
+}
+to{
+    background-position: -20px 10px;
+}
+
+}
+
+
+.win{
+    background-color: yellow;
+}
+
+
+@media screen and (min-width:768px) {
+    .nulo{
+        width: 700px;
+        height: 30px;
+    }
+  
+    .espaco,.parede{
+        width :30px;
+        height :30px;
+    }
+    .player{
+    
+        background-image: url(../img/gokedesktop.png);
+      
+        background-position: 0px -10px;
+        animation-name: goku;
+        animation-duration: 150ms;
+       
+        z-index: 2;
+    }
+ main{
+     width: 100vw;
+     height: 100vh;
+ }
+  
+
+    @keyframes goku{
+    from{
+        background-position:  30px -10px;
+    }
+    to{
+        background-position: 70px -10px;
+    }
+    
+    }
+      
+    
+}
